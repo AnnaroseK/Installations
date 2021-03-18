@@ -1,0 +1,62 @@
+Week-1 Installations in Windows
+
+Visual Studio Code(text editor) and mingw-64 (compiler)
+https://code.visualstudio.com/docs/cpp/config-mingw
+
+NOTE: 1. In edit environment variables, you need to add the path in system variables section.
+      2. #include error: go to the bulb, and in the configuration, give the path of your g++ compiler (present in migw bin)
+      3. for extensions use ctrl+shift+x
+
+Make- install directly https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=excellmedia&download=
+
+cppcheck- direct installation from link. A system update may or may not happen http://cppcheck.sourceforge.net/
+
+
+Dr. memory- direct install  https://github.com/DynamoRIO/drmemory/wiki/Downloads
+
+No need to install memory sanitisation
+
+Install git
+
+Clone unit test framework github repo http://www.throwtheswitch.org/unity
+
+Install doxygen documentation , don't use those commands. scroll down to windows : doxygen-1.9.1-setup.exe (47.1MB)
+
+
+Installation in Linux
+
+Visual studio code:
+
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+
+Import the Microsoft GPG key using the following wget command :
+
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+
+And enable the Visual Studio Code repository by typing:
+
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+Once the apt repository is enabled , install the Visual Studio Code package:
+
+sudo apt install code
+
+Compiling and running without IDE
+    sudo apt-get update
+    sudo apt-get upgrade
+    sudo apt-get install build-essential
+Compiling and running
+    gcc filename.c -o outputname.out
+    ./outputname.out
+Build tools
+Make for automating the build
+    sudo apt-get install cmake
+
+Cppcheck - sudo apt-get install cppcheck
+
+Valgrind- sudo apt-get install valgrind
+
+Clone unit test framework github repo http://www.throwtheswitch.org/unity
+
+Doxygen- done in another document
