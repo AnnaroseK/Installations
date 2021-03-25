@@ -8,6 +8,7 @@ NOTE: 1. In edit environment variables, you need to add the path in system varia
       3. for extensions use ctrl+shift+x
 
 Make- install directly https://sourceforge.net/projects/gnuwin32/files/make/3.81/make-3.81.exe/download?use_mirror=excellmedia&download=
+Add make to path. (refer the above note point 1.)
 
 cppcheck- direct installation from link. A system update may or may not happen http://cppcheck.sourceforge.net/
 
