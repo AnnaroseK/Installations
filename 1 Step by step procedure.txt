@@ -1,0 +1,25 @@
+1.Write code for sum() int sum.c
+2.Write code for square() in square.c
+3.Create user defined header fun.h
+  3.1 header file will begin with defining the file, if file not defined i.e., #ifndef __FUN_H__ #define __FUN_H__
+  3.2 next mention the function prototypes, structure definition and class definition
+4.The main function is written in test.c 
+5.For a program with 3 or 4 files, run in cmd (for compilation): gcc file1.c file2.c test.c -o output (Here output.exe file will be created havig the output)
+  Run the code: output.exe
+6.However if there are more than 50 files, it is difficult to write all the names. So we create a make file. A Makefile is created using Notepad++ without having any extension (saved as all type)
+7.In Makefile type
+
+#comments
+#Target : dependency
+#<TAB>Command
+
+all.exe : test.c sum.c sqr.c
+	gcc test.c sum.c sqr.c -o all.exe
+	
+run : all.exe
+	all.exe
+ 
+Now go to cmd and type : make for compilation, and make run for execution
+
+NOTE: For cmd to open in a particular folder, go to the folder, go to address bar, select the location and type cmd.
+
